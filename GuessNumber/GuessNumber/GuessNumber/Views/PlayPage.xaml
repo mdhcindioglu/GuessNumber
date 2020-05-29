@@ -27,19 +27,19 @@
                 <Label x:Name="lblTitle" BackgroundColor="White" Text="إختر رقماً..." HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" FontAttributes="Bold" TextColor="#224422" Padding="10" />
                 <Label x:Name="lblNumber" BackgroundColor="#55aaaa00" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Padding="10" FontSize="50" FontAttributes="Bold" TextColor="#442222"/>
                 <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-                    <StackLayout BackgroundColor="White" Opacity="0.6" x:Name="humanStackLayout" AbsoluteLayout.LayoutBounds="0,0,0.5,1" AbsoluteLayout.LayoutFlags="All" HeightRequest="1">
+                    <StackLayout AbsoluteLayout.LayoutBounds="0,0,0.5,1" AbsoluteLayout.LayoutFlags="All" HeightRequest="1">
                         <ScrollView>
-                            <StackLayout>
+                            <StackLayout x:Name="humanStackLayout" >
                                 <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="5">
-                                <Label Text="أنت" HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold"/>
-                            </StackLayout>
+                                    <Label Text="أنت" HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold"/>
+                                </StackLayout>
                             </StackLayout>
                         </ScrollView>
                     </StackLayout>
                     <BoxView BackgroundColor="#224422" AbsoluteLayout.LayoutBounds="0.5,0,2,1" AbsoluteLayout.LayoutFlags="PositionProportional,HeightProportional"/>
-                    <StackLayout BackgroundColor="White" Opacity="0.6" x:Name="pcStackLayout" AbsoluteLayout.LayoutBounds="1,0,0.5,1" AbsoluteLayout.LayoutFlags="All" HeightRequest="1">
+                    <StackLayout AbsoluteLayout.LayoutBounds="1,0,0.5,1" AbsoluteLayout.LayoutFlags="All" HeightRequest="1">
                         <ScrollView>
-                            <StackLayout>
+                            <StackLayout x:Name="pcStackLayout" >
                                 <StackLayout HorizontalOptions="FillAndExpand" Padding="5">
                                     <Label Text="الجوال" HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold"/>
                                 </StackLayout>

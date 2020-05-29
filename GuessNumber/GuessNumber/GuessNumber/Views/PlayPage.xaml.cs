@@ -90,7 +90,12 @@ namespace GuessNumber
                     {
                         lblTitle.Text = GetTurn;
 
-                        human.Guesses.Add(new ListViewItem { Choice = lblNumber.Text, Result = service.GetResultFromPc(lblNumber.Text) });
+                        human.Guesses.Add(
+                            new ListViewItem
+                            {
+                                Choice = lblNumber.Text,
+                                Result = new string(Randomize<char>(service.GetResultFromPc(lblNumber.Text).ToArray()).ToArray()),
+                            });
                         humanStackLayout.Children.Add(AddToHumanStackLayout(human.Guesses.Last().Choice, human.Guesses.Last().Result));
 
                         if (human.Guesses.Last().Result == "AAAA")
@@ -137,12 +142,29 @@ namespace GuessNumber
             return sl;
         }
 
+        public static T[] Randomize<T>(T[] items)
+        {
+            Random rand = new Random();
+
+            // For each spot in the array, pick
+            // a random item to swap into that spot.
+            for (int i = 0; i < items.Length - 1; i++)
+            {
+                int j = rand.Next(i, items.Length);
+                T temp = items[i];
+                items[i] = items[j];
+                items[j] = temp;
+            }
+
+            return items;
+        }
+
         private void PcGeussNumber()
         {
             lblTitle.Text = GetTurn;
             var pcPossibility = service.GetNumberFromPcPossibilities();
             var result = service.GetResultFromHuman(pcPossibility);
-            pc.Guesses.Add(new ListViewItem { Choice = pcPossibility, Result = result });
+            pc.Guesses.Add(new ListViewItem { Choice = pcPossibility, Result = new string(Randomize<char>(result.ToArray()).ToArray()) });
             pcStackLayout.Children.Add(AddToPcStackLayout(pc.Guesses.Last().Choice, pc.Guesses.Last().Result));
 
             service.RemoveUnAcceptedPossibilities(pcPossibility, result);

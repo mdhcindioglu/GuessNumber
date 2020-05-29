@@ -604,25 +604,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AyTa\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\MC\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\AyTa\\Source\\Repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj",
+      "projectUniqueName": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj",
       "projectName": "GuessNumber",
-      "projectPath": "D:\\Users\\AyTa\\Source\\Repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj",
-      "packagesPath": "C:\\Users\\AyTa\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\AyTa\\Source\\Repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\obj\\",
+      "projectPath": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj",
+      "packagesPath": "C:\\Users\\MC\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\AyTa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -672,7 +670,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-preview.2.20176.6\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.300-preview-015135\\RuntimeIdentifierGraph.json"
       }
     }
   }

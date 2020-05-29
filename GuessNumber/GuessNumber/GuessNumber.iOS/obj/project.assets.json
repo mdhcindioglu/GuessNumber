@@ -1045,24 +1045,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\AyTa\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\MC\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\AyTa\\Source\\Repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.iOS\\GuessNumber.iOS.csproj",
+      "projectUniqueName": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.iOS\\GuessNumber.iOS.csproj",
       "projectName": "GuessNumber.iOS",
-      "projectPath": "D:\\Users\\AyTa\\Source\\Repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.iOS\\GuessNumber.iOS.csproj",
-      "packagesPath": "C:\\Users\\AyTa\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\AyTa\\Source\\Repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.iOS\\obj\\",
+      "projectPath": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.iOS\\GuessNumber.iOS.csproj",
+      "packagesPath": "C:\\Users\\MC\\.nuget\\packages\\",
+      "outputPath": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\AyTa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1076,8 +1076,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\Users\\AyTa\\Source\\Repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj": {
-              "projectPath": "D:\\Users\\AyTa\\Source\\Repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj"
+            "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj": {
+              "projectPath": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj"
             }
           }
         }
