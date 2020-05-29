@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             NavigationPage.HasNavigationBar="False"
+             mc:Ignorable="d"
+             x:Class="GuessNumber.PlayPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="btns" TargetType="Button">
+                <Setter Property="CornerRadius" Value="10" />
+                <Setter Property="Padding" Value="5" />
+                <Setter Property="FontSize" Value="30" />
+                <Setter Property="HorizontalOptions" Value="Fill" />
+                <Setter Property="BackgroundColor" Value="#222244" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image Source="Background.jpg" Aspect="AspectFill" Style="{StaticResource layoutBoundsFill}"/>
+            <BoxView BackgroundColor="White" Opacity="0.5" Style="{StaticResource layoutBoundsFill}"/>
+            <StackLayout Style="{StaticResource layoutBoundsFill}" Spacing="0">
+                <Label x:Name="lblTitle" BackgroundColor="White" Text="إختر رقماً..." HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" FontAttributes="Bold" TextColor="#224422" Padding="10" />
+                <Label x:Name="lblNumber" BackgroundColor="#55aaaa00" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Padding="10" FontSize="50" FontAttributes="Bold" TextColor="#442222"/>
+                <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+                    <StackLayout BackgroundColor="White" Opacity="0.6" x:Name="humanStackLayout" AbsoluteLayout.LayoutBounds="0,0,0.5,1" AbsoluteLayout.LayoutFlags="All" HeightRequest="1">
+                        <ScrollView>
+                            <StackLayout>
+                                <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Padding="5">
+                                <Label Text="أنت" HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold"/>
+                            </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                    <BoxView BackgroundColor="#224422" AbsoluteLayout.LayoutBounds="0.5,0,2,1" AbsoluteLayout.LayoutFlags="PositionProportional,HeightProportional"/>
+                    <StackLayout BackgroundColor="White" Opacity="0.6" x:Name="pcStackLayout" AbsoluteLayout.LayoutBounds="1,0,0.5,1" AbsoluteLayout.LayoutFlags="All" HeightRequest="1">
+                        <ScrollView>
+                            <StackLayout>
+                                <StackLayout HorizontalOptions="FillAndExpand" Padding="5">
+                                    <Label Text="الجوال" HorizontalOptions="CenterAndExpand" FontSize="20" FontAttributes="Bold"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </ScrollView>
+                    </StackLayout>
+                </AbsoluteLayout>
+                <Grid x:Name="grd" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="End" ColumnSpacing="10" RowSpacing="10" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Button x:Name="Btn1" Text="1" Style="{StaticResource btns}" Grid.Row="0" Grid.Column="0" Clicked="Button_Clicked"/>
+                    <Button x:Name="Btn2" Text="2" Style="{StaticResource btns}" Grid.Row="0" Grid.Column="1" Clicked="Button_Clicked"/>
+                    <Button x:Name="Btn3" Text="3" Style="{StaticResource btns}" Grid.Row="0" Grid.Column="2" Clicked="Button_Clicked"/>
+                    <Button x:Name="Btn4" Text="4" Style="{StaticResource btns}" Grid.Row="1" Grid.Column="0" Clicked="Button_Clicked"/>
+                    <Button x:Name="Btn5" Text="5" Style="{StaticResource btns}" Grid.Row="1" Grid.Column="1" Clicked="Button_Clicked"/>
+                    <Button x:Name="Btn6" Text="6" Style="{StaticResource btns}" Grid.Row="1" Grid.Column="2" Clicked="Button_Clicked"/>
+                    <Button x:Name="Btn7" Text="7" Style="{StaticResource btns}" Grid.Row="2" Grid.Column="0" Clicked="Button_Clicked"/>
+                    <Button x:Name="Btn8" Text="8" Style="{StaticResource btns}" Grid.Row="2" Grid.Column="1" Clicked="Button_Clicked"/>
+                    <Button x:Name="Btn9" Text="9" Style="{StaticResource btns}" Grid.Row="2" Grid.Column="2" Clicked="Button_Clicked"/>
+                    <Button x:Name="BtnD" IsEnabled="False" Text="حذف" Style="{StaticResource btns}" Grid.Row="3" Grid.Column="0" Clicked="Button_Clicked" BackgroundColor="#442222"/>
+                    <Button x:Name="Btn0" Text="0" Style="{StaticResource btns}" Grid.Row="3" Grid.Column="1" Clicked="Button_Clicked"/>
+                    <Button x:Name="BtnN" IsEnabled="False" Text="موافق" Style="{StaticResource btns}" Grid.Row="3" Grid.Column="2" Clicked="Button_Clicked" BackgroundColor="#224422"/>
+                </Grid>
+            </StackLayout>
+            <Label x:Name="lblHumanNumber" FontSize="20" FontAttributes="Bold" TextColor="#224422" Padding="10" AbsoluteLayout.LayoutBounds="0,0,100,50" AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            <Label x:Name="lblPcNumber" FontSize="20" FontAttributes="Bold" TextColor="#224422" Padding="10" AbsoluteLayout.LayoutBounds="1,0,1,50" AbsoluteLayout.LayoutFlags="WidthProportional,PositionProportional" HorizontalTextAlignment="End"/>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

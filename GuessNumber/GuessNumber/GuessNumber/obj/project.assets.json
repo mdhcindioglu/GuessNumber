@@ -605,7 +605,8 @@
   },
   "packageFolders": {
     "C:\\Users\\AyTa\\.nuget\\packages\\": {},
-    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -617,7 +618,8 @@
       "outputPath": "D:\\Users\\AyTa\\Source\\Repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "D:\\Microsoft\\Xamarin\\NuGet\\"
+        "D:\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\AyTa\\AppData\\Roaming\\NuGet\\NuGet.Config",

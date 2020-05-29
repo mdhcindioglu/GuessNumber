@@ -4,8 +4,14 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
              x:Class="GuessNumber.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Style x:Key="layoutBoundsFill" TargetType="Image">
+                <Setter Property="AbsoluteLayout.LayoutBounds" Value="0, 0, 1, 1"/>
+                <Setter Property="AbsoluteLayout.LayoutFlags" Value="All"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

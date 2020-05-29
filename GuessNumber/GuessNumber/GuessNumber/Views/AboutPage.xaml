@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             Title="قواعد اللعبة"
+             mc:Ignorable="d"
+             x:Class="GuessNumber.AboutPage">
+    <ContentPage.Content>
+        <ScrollView Padding="20">
+        <StackLayout>
+                <Label Text="مقدمة:" FontSize="20" FontAttributes="Bold" />
+                <Label Text="تعتمد اللعبة على لاعبين ، أنت والجوال. بداية عليك إختيار رقم مكون من أربع خانات بدون تكرار أي 5684 أو 1657 أو 9641. ثم يبدأ اللعب أحد اللاعبين ويتم تحديد اللاعب الأول بشكل عشوائي."
+                   LineBreakMode="WordWrap" />
+                <Label Text="في حال بدأ الجوال باللعب فسيحدد رقم مكون من أربع خانات ويعرضه على الشاشة في خانت الجوال, ثم يعرض نتيجة مقارنته مع رقمك الذي اخترته في أول مرحلة، وتكون النتيجة كما يلي:"
+                   LineBreakMode="WordWrap" />
+            <StackLayout Padding="0,10">
+                    <Label Text="النتائج:" FontSize="20" FontAttributes="Bold" />
+                    <Label Text="1- في حال وجود خانة من الأربع خانات تحوي رقم من ضمن الأرقام الأربعة التي اخترتها وكان في نفس المكان فسيظهر حرف (ط) أي تطابق."
+                   LineBreakMode="WordWrap" />
+            <Label Text="2- في حال وجود خانة من الأربع خانات تحوي رقم من ضمن الأرقام الأربعة التي اخترتها ولكن في مكان آخر فسيظهر حرف (ت) أي تبادل."
+                   LineBreakMode="WordWrap" />
+            <Label Text="3- في حال عدم وجود تطابق أو تبادل في أي خانة من الأربع خانات فسيظهر (-)."
+                   LineBreakMode="WordWrap" />
+            </StackLayout>
+                <Label Text="وبهذا ينتقل الدور للاعب الثاني فإن كنت أنت فعليك تخمين رقم من أربع خانات وغير مكرر ثم نقر زر موافق، سيظهر الرقم في خانتك وبجانبه النتيجة: ط ط أو ط ت أو -..."
+                   LineBreakMode="WordWrap" />
+            <Label Text="وهكذا تتكرر العملية حتى يخمن أحدكما رقم الطرف الآخر وبذلك يكون هو الرابح."
+                   LineBreakMode="WordWrap" />
+                <Label Text="التحليل:" FontSize="20" FontAttributes="Bold" />
+                <Label Text="تعتمد اللعبة على التحليل والمقارنة فمثلا عند إدخال رقم 7896 وظهور النتيجة (-) فهذا يعني أن رقم الطرف الآخر لا يحوي 7896 , وعليه فمن الخطأ إعادة إدخال هذه الأرقام إلا في حالة التأكد من رقم آخر."
+                   LineBreakMode="WordWrap" />
+                <Label Text="فمثلا ... في حال كانت نتيجة رقم مثل 1234 هو ت ت أي تبادلين فهذا يعني أن إثنين من الأرقام الأربعة صحيحة ولكن أماكنها غير صحيحة."
+                   LineBreakMode="WordWrap" />
+                <Label Text="وإذا كانت نتيجة رقم مثل9056 هو ت ط أي تبادل وتطابق فهذا يعني أن إثنين من الأرقام الأربعة صحيحة ولكن أحدهما في مكانه والآخر في مكان غير مكانه."
+                   LineBreakMode="WordWrap" />
+                <Label Text="وهكذا حتى تخمن الرقم الصحيح."
+                   LineBreakMode="WordWrap" />
+                <Label Padding="0,20" FontAttributes="Bold" Text="أتمنى لكم قضاء أوقات مفيدة وممتعة مع هذا التطبيق. ولا تبخلوا علينا بتقييم التطبيق على سوق غوغل بلاي." LineBreakMode="WordWrap" />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

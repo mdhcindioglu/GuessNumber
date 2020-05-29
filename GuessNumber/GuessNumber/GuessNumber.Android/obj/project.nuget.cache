@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "4jucxgUkx2Q1oKFFjVamMFnsRSxLE5LwGzJh1VcP7NO0L9LxgrqMzVLj0HSO6t7idBgzZsIA69VUApUFBy7Myg==",
+  "dgSpecHash": "7N6ZBqzRRXttS9E232L+62FjXKy3zDPRYRXXXmGZpGJfAgyEyIfCmmI2+P7JC1zVeC3jJ+EEkWBHpA6vURnw0w==",
   "success": true,
   "projectFilePath": "D:\\Users\\AyTa\\Source\\Repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\GuessNumber.Android.csproj",
   "expectedPackageFiles": [
@@ -43,7 +43,7 @@
     "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.versionedparcelable\\28.0.0.3\\xamarin.android.support.versionedparcelable.28.0.0.3.nupkg.sha512",
     "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.support.viewpager\\28.0.0.3\\xamarin.android.support.viewpager.28.0.0.3.nupkg.sha512",
     "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
-    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+    "C:\\Users\\AyTa\\.nuget\\packages\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
   ],
   "logs": []
 }

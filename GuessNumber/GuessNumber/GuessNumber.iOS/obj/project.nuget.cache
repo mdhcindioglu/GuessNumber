@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "xfBYfKT0xVt3r/2XAWgtfa42PqYg/vBPZwFaQ9i9zmREAcC65g4NRRzpkrKc9zbtDRN1vyYJ66j/oEcuRY3jfQ==",
+  "dgSpecHash": "mJjXqGRm57/QPpTs5iE/2TyNLjYrrpa4s3t43E/6rh4B5kJS2wY4elFIG5jAYuu148bTap6Q/YEbx0jJlKA5kw==",
   "success": true,
   "projectFilePath": "D:\\Users\\AyTa\\Source\\Repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.iOS\\GuessNumber.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\AyTa\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.3.1\\xamarin.essentials.1.3.1.nupkg.sha512",
-    "D:\\Microsoft\\Xamarin\\NuGet\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
+    "C:\\Users\\AyTa\\.nuget\\packages\\xamarin.forms\\4.5.0.495\\xamarin.forms.4.5.0.495.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="GuessNumber.MainPage">
+
+    <AbsoluteLayout>
+        <Image Source="Background.jpg" Aspect="AspectFill" Style="{StaticResource layoutBoundsFill}"/>
+        <BoxView BackgroundColor="White" Opacity="0.5" Style="{StaticResource layoutBoundsFill}"/>
+        <StackLayout Style="{StaticResource layoutBoundsFill}" Padding="20, 40, 20, 20">
+            <Label Text="لعبة خمّن الرقم" HorizontalOptions="Center" FontSize="36" BackgroundColor="Transparent" FontAttributes="Bold" TextColor="#222244"/>
+            <Label Text="????" HorizontalOptions="Center" FontSize="36" BackgroundColor="Transparent" FontAttributes="Bold" TextColor="#222244"/>
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Spacing="30">
+                <Button Text="ابدأ لعبة جديدة" CornerRadius="10" Padding="20" FontSize="24" HorizontalOptions="Fill" BackgroundColor="#442222" TextColor="White" FontAttributes="Bold" Clicked="BtnStart_Clicked"/>
+                <Button Text="قواعد اللعبة" CornerRadius="10" Padding="20" FontSize="20" HorizontalOptions="Fill" BackgroundColor="#224422" TextColor="White" FontAttributes="Bold" Clicked="BtnAbout_Clicked"/>
+            </StackLayout>
+            <!--<ImageButton WidthRequest="50" HeightRequest="50" BackgroundColor="Transparent" Source="Settings.png" HorizontalOptions="Start" VerticalOptions="End" Clicked="BtnSettings_Clicked" />-->
+        </StackLayout>
+    </AbsoluteLayout>
+
+</ContentPage>
