@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppTitle" xml:space="preserve">
+    <value>خمّن الرقم</value>
+  </data>
+  <data name="BackToMain" xml:space="preserve">
+    <value>عودة للصفحة الرئيسية</value>
+  </data>
+  <data name="ChoiceNumber" xml:space="preserve">
+    <value>إختر رقم من اربع خانات</value>
+  </data>
+  <data name="D" xml:space="preserve">
+    <value>ت</value>
+  </data>
+  <data name="Del" xml:space="preserve">
+    <value>حذف</value>
+  </data>
+  <data name="Mobile" xml:space="preserve">
+    <value>الجوال</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>موافق</value>
+  </data>
+  <data name="Question" xml:space="preserve">
+    <value>؟؟؟؟</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>قواعد اللعبة</value>
+  </data>
+  <data name="RolesDetails" xml:space="preserve">
+    <value>&lt;P style="text-size=20"&gt;
+    &lt;strong&gt;مقدمة:&lt;/strong&gt;
+&lt;/P&gt;
+&lt;p&gt;تعتمد اللعبة على لاعبين ، أنت والجوال. بداية عليك إختيار رقم مكون من أربع خانات بدون تكرار أي 5684 أو 1657 أو 9641. ثم يبدأ اللعب أحد اللاعبين ويتم تحديد اللاعب الأول بشكل عشوائي.&lt;/p&gt;
+&lt;p&gt;في حال بدأ الجوال باللعب فسيحدد رقم مكون من أربع خانات ويعرضه على الشاشة في خانت الجوال, ثم يعرض نتيجة مقارنته مع رقمك الذي اخترته في أول مرحلة، وتكون النتيجة كما يلي:&lt;/p&gt;
+&lt;P style="text-size=20"&gt;
+    &lt;strong&gt;النتائج:&lt;/strong&gt;
+&lt;/P&gt;
+&lt;p&gt;1- في حال وجود خانة من الأربع خانات تحوي رقم من ضمن الأرقام الأربعة التي اخترتها وكان في نفس المكان فسيظهر حرف (ط) أي تطابق.&lt;/p&gt;
+&lt;p&gt;2- في حال وجود خانة من الأربع خانات تحوي رقم من ضمن الأرقام الأربعة التي اخترتها ولكن في مكان آخر فسيظهر حرف (ت) أي تبادل.&lt;/p&gt;
+&lt;p&gt;3- في حال عدم وجود تطابق أو تبادل في أي خانة من الأربع خانات فسيظهر (-).&lt;/p&gt;
+&lt;p&gt;وبهذا ينتقل الدور للاعب الثاني فإن كنت أنت فعليك تخمين رقم من أربع خانات وغير مكرر ثم نقر زر موافق، سيظهر الرقم في خانتك وبجانبه النتيجة: ط ط أو ط ت أو -...&lt;/p&gt;
+&lt;p&gt;وهكذا تتكرر العملية حتى يخمن أحدكما رقم الطرف الآخر وبذلك يكون هو الرابح.&lt;/p&gt;
+&lt;P style="text-size=20"&gt;
+    &lt;strong&gt;التحليل:&lt;/strong&gt;
+&lt;/P&gt;
+&lt;p&gt;تعتمد اللعبة على التحليل والمقارنة فمثلا عند إدخال رقم 7896 وظهور النتيجة (-) فهذا يعني أن رقم الطرف الآخر لا يحوي 7896 , وعليه فمن الخطأ إعادة إدخال هذه الأرقام إلا في حالة التأكد من رقم آخر.&lt;/p&gt;
+&lt;p&gt;فمثلا ... في حال كانت نتيجة رقم مثل 1234 هو ت ت أي تبادلين فهذا يعني أن إثنين من الأرقام الأربعة صحيحة ولكن أماكنها غير صحيحة.&lt;/p&gt;
+&lt;p&gt;وإذا كانت نتيجة رقم مثل9056 هو ت ط أي تبادل وتطابق فهذا يعني أن إثنين من الأرقام الأربعة صحيحة ولكن أحدهما في مكانه والآخر في مكان غير مكانه.&lt;/p&gt;
+&lt;p&gt;وهكذا حتى تخمن الرقم الصحيح.&lt;/p&gt;
+&lt;p style="text-size=20"&gt;
+    &lt;strong&gt;أتمنى لكم قضاء أوقات مفيدة وممتعة مع هذا التطبيق. ولا تبخلوا علينا بتقييم التطبيق على سوق غوغل بلاي.&lt;/strong&gt;
+&lt;/p&gt;</value>
+  </data>
+  <data name="S" xml:space="preserve">
+    <value>ط</value>
+  </data>
+  <data name="StartGame" xml:space="preserve">
+    <value>ابدأ لعبة جديدة</value>
+  </data>
+  <data name="You" xml:space="preserve">
+    <value>أنت</value>
+  </data>
+  <data name="YouLost" xml:space="preserve">
+    <value>آسف، لقد خسرت هذه الجولة.</value>
+  </data>
+  <data name="YourTurn" xml:space="preserve">
+    <value>دورك الآن</value>
+  </data>
+  <data name="YouWon" xml:space="preserve">
+    <value>مبروك! لقد ربحت هذه الجولة!</value>
+  </data>
+</root>

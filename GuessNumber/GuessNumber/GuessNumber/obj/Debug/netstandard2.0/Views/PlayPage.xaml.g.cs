@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("GuessNumber.Views.PlayPage.xaml", "Views/PlayPage.xaml", typeof(global::GuessNumber.PlayPage))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("GuessNumber.Views.PlayPage.xaml", "Views/PlayPage.xaml", typeof(global::GuessNumber.Views.PlayPage))]
 
-namespace GuessNumber {
+namespace GuessNumber.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\PlayPage.xaml")]
@@ -21,6 +21,9 @@ namespace GuessNumber {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Label lblNumber;
+        
+        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
+        private global::Xamarin.Forms.Button btnBack;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.StackLayout humanStackLayout;
@@ -78,6 +81,7 @@ namespace GuessNumber {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(PlayPage));
             lblTitle = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lblTitle");
             lblNumber = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Label>(this, "lblNumber");
+            btnBack = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnBack");
             humanStackLayout = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "humanStackLayout");
             pcStackLayout = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.StackLayout>(this, "pcStackLayout");
             grd = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Grid>(this, "grd");

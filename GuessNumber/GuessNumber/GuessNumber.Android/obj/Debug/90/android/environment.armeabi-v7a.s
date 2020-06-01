@@ -23,8 +23,8 @@
 	.section	.rodata.env.str.1,"aMS",%progbits,1
 	.type	.L.env.str.1, %object
 .L.env.str.1:
-	.asciz	"com.mhdcindioglu.guessnumber"
-	.size	.L.env.str.1, 29
+	.asciz	"com.companyname.guessnumber"
+	.size	.L.env.str.1, 28
 	.section	.data.application_config,"aw",%progbits
 	.type	application_config, %object
 	.p2align	2
@@ -92,7 +92,7 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",%progbits,1
 	.type	.L.env.str.8, %object
 .L.env.str.8:
-	.asciz	"8bf1fdab-4490-4a13-874c-dae6b3b8dd0b"
+	.asciz	"2f50c1de-ecf2-443c-9249-701dc19c61f7"
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",%progbits,1
 	.type	.L.env.str.9, %object

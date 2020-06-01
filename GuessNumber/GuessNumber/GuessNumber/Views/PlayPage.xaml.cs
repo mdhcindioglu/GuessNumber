@@ -1,29 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Linq;
-using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace GuessNumber
+namespace GuessNumber.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PlayPage : ContentPage
     {
-        MainService service;
-
-        public GameViewModel human;
-        public GameViewModel pc;
+        GuessNumber service;
 
         public PlayPage()
         {
             InitializeComponent();
-            human = new GameViewModel();
-            pc = new GameViewModel();
         }
 
         public string GetTurn
@@ -70,7 +63,7 @@ namespace GuessNumber
                 if (service == null)
                 {
                     //Prepare service 
-                    service = new MainService(lblNumber.Text);
+                    service = new GuessNumber(lblNumber.Text);
                     lblHumanNumber.Text = lblNumber.Text;
                     if (service.CurrentTurn == Turn.Pc)
                         PcGeussNumber();
@@ -90,15 +83,15 @@ namespace GuessNumber
                     {
                         lblTitle.Text = GetTurn;
 
-                        human.Guesses.Add(
+                        service.HumanGuesses.Add(
                             new ListViewItem
                             {
                                 Choice = lblNumber.Text,
                                 Result = new string(Randomize<char>(service.GetResultFromPc(lblNumber.Text).ToArray()).ToArray()),
                             });
-                        humanStackLayout.Children.Add(AddToHumanStackLayout(human.Guesses.Last().Choice, human.Guesses.Last().Result));
+                        humanStackLayout.Children.Add(AddToHumanStackLayout(service.HumanGuesses.Last().Choice, service.HumanGuesses.Last().Result));
 
-                        if (human.Guesses.Last().Result == "AAAA")
+                        if (service.HumanGuesses.Last().Result == "AAAA")
                         {
                             service.WhoWin = Win.Human;
                             lblPcNumber.Text = service.PcSelectedNumber;
@@ -164,11 +157,11 @@ namespace GuessNumber
             lblTitle.Text = GetTurn;
             var pcPossibility = service.GetNumberFromPcPossibilities();
             var result = service.GetResultFromHuman(pcPossibility);
-            pc.Guesses.Add(new ListViewItem { Choice = pcPossibility, Result = new string(Randomize<char>(result.ToArray()).ToArray()) });
-            pcStackLayout.Children.Add(AddToPcStackLayout(pc.Guesses.Last().Choice, pc.Guesses.Last().Result));
+            service.PcGuesses.Add(new ListViewItem { Choice = pcPossibility, Result = new string(Randomize<char>(result.ToArray()).ToArray()) });
+            pcStackLayout.Children.Add(AddToPcStackLayout(service.PcGuesses.Last().Choice, service.PcGuesses.Last().Result));
 
             service.RemoveUnAcceptedPossibilities(pcPossibility, result);
-            if (pc.Guesses.Last().Result == "AAAA")
+            if (service.PcGuesses.Last().Result == "AAAA")
             {
                 service.WhoWin = Win.Pc;
                 lblPcNumber.Text = service.PcSelectedNumber;
@@ -230,7 +223,16 @@ namespace GuessNumber
             {
                 foreach (Button btn in grd.Children)
                     btn.IsEnabled = false;
+                
+                lblNumber.IsVisible = false;
+                btnBack.IsVisible = true;
+                lblTitle.Text = string.Empty;
             }
+        }
+
+        private async void btnBack_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopAsync();
         }
     }
 }

@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              NavigationPage.HasNavigationBar="False"
              mc:Ignorable="d"
-             x:Class="GuessNumber.PlayPage">
+             x:Class="GuessNumber.Views.PlayPage">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="btns" TargetType="Button">
@@ -26,6 +26,7 @@
             <StackLayout Style="{StaticResource layoutBoundsFill}" Spacing="0">
                 <Label x:Name="lblTitle" BackgroundColor="White" Text="إختر رقماً..." HorizontalTextAlignment="Center" VerticalTextAlignment="Center" FontSize="20" FontAttributes="Bold" TextColor="#224422" Padding="10" />
                 <Label x:Name="lblNumber" BackgroundColor="#55aaaa00" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" Padding="10" FontSize="50" FontAttributes="Bold" TextColor="#442222"/>
+                <Button x:Name="btnBack" Text="عودة للصفحة الرئيسية" IsVisible="false" HorizontalOptions="FillAndExpand" Padding="10" FontSize="25" FontAttributes="Bold" TextColor="White" BackgroundColor="#442222" Clicked="btnBack_Clicked"/>
                 <AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
                     <StackLayout AbsoluteLayout.LayoutBounds="0,0,0.5,1" AbsoluteLayout.LayoutFlags="All" HeightRequest="1">
                         <ScrollView>

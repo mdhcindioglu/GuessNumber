@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
-      "System.Numerics.Vectors/4.5.0": {
-        "type": "package",
-        "compile": {
-          "ref/MonoAndroid10/_._": {}
-        },
-        "runtime": {
-          "lib/MonoAndroid10/_._": {}
-        }
-      },
       "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
         "type": "package",
         "dependencies": {
@@ -752,19 +743,18 @@
           "build/monoandroid90/Xamarin.Android.Support.ViewPager.targets": {}
         }
       },
-      "Xamarin.Essentials/1.3.1": {
+      "Xamarin.Build.Download/0.7.0": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Xamarin.Essentials/1.5.3.2": {
         "type": "package",
         "dependencies": {
-          "System.Numerics.Vectors": "4.5.0",
           "Xamarin.Android.Support.Compat": "28.0.0.3",
-          "Xamarin.Android.Support.Core.Utils": "28.0.0.3",
           "Xamarin.Android.Support.CustomTabs": "28.0.0.3"
         },
-        "frameworkAssemblies": [
-          "Java.Interop",
-          "System.Numerics",
-          "System.Numerics.Vectors"
-        ],
         "compile": {
           "lib/monoandroid90/Xamarin.Essentials.dll": {}
         },
@@ -772,7 +762,7 @@
           "lib/monoandroid90/Xamarin.Essentials.dll": {}
         }
       },
-      "Xamarin.Forms/4.5.0.495": {
+      "Xamarin.Forms/4.6.0.800": {
         "type": "package",
         "dependencies": {
           "Xamarin.Android.Support.CustomTabs": "28.0.0.3",
@@ -796,16 +786,113 @@
           "lib/MonoAndroid90/Xamarin.Forms.Xaml.dll": {}
         },
         "build": {
-          "build/Xamarin.Forms.props": {},
-          "build/Xamarin.Forms.targets": {}
+          "buildTransitive/Xamarin.Forms.props": {},
+          "buildTransitive/Xamarin.Forms.targets": {}
         }
       },
-      "GuessNumber/1.0.0": {
+      "Xamarin.GooglePlayServices.Ads.Base/71.1720.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.7.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Base.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Base.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/Xamarin.GooglePlayServices.Ads.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Ads.Lite/71.1720.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.7.0",
+          "Xamarin.GooglePlayServices.Ads.Base": "71.1720.1",
+          "Xamarin.GooglePlayServices.Basement": "71.1620.2",
+          "Xamarin.GooglePlayServices.Measurement.Sdk.Api": "71.1630.1"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Lite.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Lite.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/Xamarin.GooglePlayServices.Ads.Lite.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Basement/71.1620.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.v4": "28.0.0.3",
+          "Xamarin.Build.Download": "0.7.0"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Basement.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Basement.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/Xamarin.GooglePlayServices.Basement.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Measurement.Base/71.1630.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.7.0",
+          "Xamarin.GooglePlayServices.Basement": "71.1620.2"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Base.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Base.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/Xamarin.GooglePlayServices.Measurement.Base.targets": {}
+        }
+      },
+      "Xamarin.GooglePlayServices.Measurement.Sdk.Api/71.1630.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Build.Download": "0.7.0",
+          "Xamarin.GooglePlayServices.Basement": "71.1620.2",
+          "Xamarin.GooglePlayServices.Measurement.Base": "71.1630.1"
+        },
+        "frameworkAssemblies": [
+          "Java.Interop"
+        ],
+        "compile": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.dll": {}
+        },
+        "runtime": {
+          "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.targets": {}
+        }
+      },
+      "GuessNumber/1.0.2": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "Xamarin.Essentials": "1.3.1",
-          "Xamarin.Forms": "4.5.0.495"
+          "Xamarin.Essentials": "1.5.3.2",
+          "Xamarin.Forms": "4.6.0.800"
         },
         "compile": {
           "bin/placeholder/GuessNumber.dll": {}
@@ -817,53 +904,6 @@
     }
   },
   "libraries": {
-    "System.Numerics.Vectors/4.5.0": {
-      "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
-      "type": "package",
-      "path": "system.numerics.vectors/4.5.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "lib/MonoAndroid10/_._",
-        "lib/MonoTouch10/_._",
-        "lib/net46/System.Numerics.Vectors.dll",
-        "lib/net46/System.Numerics.Vectors.xml",
-        "lib/netcoreapp2.0/_._",
-        "lib/netstandard1.0/System.Numerics.Vectors.dll",
-        "lib/netstandard1.0/System.Numerics.Vectors.xml",
-        "lib/netstandard2.0/System.Numerics.Vectors.dll",
-        "lib/netstandard2.0/System.Numerics.Vectors.xml",
-        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
-        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
-        "lib/uap10.0.16299/_._",
-        "lib/xamarinios10/_._",
-        "lib/xamarinmac20/_._",
-        "lib/xamarintvos10/_._",
-        "lib/xamarinwatchos10/_._",
-        "ref/MonoAndroid10/_._",
-        "ref/MonoTouch10/_._",
-        "ref/net45/System.Numerics.Vectors.dll",
-        "ref/net45/System.Numerics.Vectors.xml",
-        "ref/net46/System.Numerics.Vectors.dll",
-        "ref/net46/System.Numerics.Vectors.xml",
-        "ref/netcoreapp2.0/_._",
-        "ref/netstandard1.0/System.Numerics.Vectors.dll",
-        "ref/netstandard1.0/System.Numerics.Vectors.xml",
-        "ref/netstandard2.0/System.Numerics.Vectors.dll",
-        "ref/netstandard2.0/System.Numerics.Vectors.xml",
-        "ref/uap10.0.16299/_._",
-        "ref/xamarinios10/_._",
-        "ref/xamarinmac20/_._",
-        "ref/xamarintvos10/_._",
-        "ref/xamarinwatchos10/_._",
-        "system.numerics.vectors.4.5.0.nupkg.sha512",
-        "system.numerics.vectors.nuspec",
-        "useSharedDesignerContext.txt",
-        "version.txt"
-      ]
-    },
     "Xamarin.Android.Arch.Core.Common/1.1.1.3": {
       "sha512": "ss+hnEoFeyxLgHk3TrCBqTMkK6ZJqhq382AONzdVGg7cyVibvBMWPX2Xp5byB8tvRJOMRIWZnqyqgpYQIagkZA==",
       "type": "package",
@@ -1618,22 +1658,35 @@
         "xamarin.android.support.viewpager.nuspec"
       ]
     },
-    "Xamarin.Essentials/1.3.1": {
-      "sha512": "+51728AdZ/qtABGvcIaNXgEoL2jAtxAXLHS8PvGCP0pb6n7twBqYpfgkmwHYVgu+U99szgtL+Jot8L+OXorPcA==",
+    "Xamarin.Build.Download/0.7.0": {
+      "sha512": "2zbaFZE/cGdnn2OQw2S+vSIzV/rIoim/A1E9zG7OJJr9vtbkErvr0U3OC7VQQqVqnoBzgTvxhlz+uQtjSm3cpg==",
       "type": "package",
-      "path": "xamarin.essentials/1.3.1",
+      "path": "xamarin.build.download/0.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "lib/monoandroid60/Xamarin.Essentials.dll",
-        "lib/monoandroid60/Xamarin.Essentials.pdb",
-        "lib/monoandroid60/Xamarin.Essentials.xml",
-        "lib/monoandroid70/Xamarin.Essentials.dll",
-        "lib/monoandroid70/Xamarin.Essentials.pdb",
-        "lib/monoandroid70/Xamarin.Essentials.xml",
-        "lib/monoandroid71/Xamarin.Essentials.dll",
-        "lib/monoandroid71/Xamarin.Essentials.pdb",
-        "lib/monoandroid71/Xamarin.Essentials.xml",
+        "THIRD-PARTY-NOTICE.txt",
+        "build/Mono.Cecil.dll",
+        "build/Newtonsoft.Json.dll",
+        "build/Xamarin.Build.Download.dll",
+        "build/Xamarin.Build.Download.props",
+        "build/Xamarin.Build.Download.targets",
+        "xamarin.build.download.0.7.0.nupkg.sha512",
+        "xamarin.build.download.nuspec"
+      ]
+    },
+    "Xamarin.Essentials/1.5.3.2": {
+      "sha512": "BSLgDJUOPFRwTpQaftM+s4qb/MsTjrqXulEYDOcK6KF3i0Orf75zo3RwRfqnQ8WfpoEFxW/v0jgcPWCvOMgHxg==",
+      "type": "package",
+      "path": "xamarin.essentials/1.5.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "icon.png",
+        "lib/monoandroid10.0/Xamarin.Essentials.dll",
+        "lib/monoandroid10.0/Xamarin.Essentials.pdb",
+        "lib/monoandroid10.0/Xamarin.Essentials.xml",
         "lib/monoandroid80/Xamarin.Essentials.dll",
         "lib/monoandroid80/Xamarin.Essentials.pdb",
         "lib/monoandroid80/Xamarin.Essentials.xml",
@@ -1666,14 +1719,14 @@
         "lib/xamarinwatchos10/Xamarin.Essentials.pdb",
         "lib/xamarinwatchos10/Xamarin.Essentials.xml",
         "readme.txt",
-        "xamarin.essentials.1.3.1.nupkg.sha512",
+        "xamarin.essentials.1.5.3.2.nupkg.sha512",
         "xamarin.essentials.nuspec"
       ]
     },
-    "Xamarin.Forms/4.5.0.495": {
-      "sha512": "ipufpdjFh+YHHw1E3I+8FIQWk1KmlB77PSHg32YRnuBSCUNEHjoMnvEmY9YCK4DTWfOenV0HHZVvGjB9qDtI9w==",
+    "Xamarin.Forms/4.6.0.800": {
+      "sha512": "9BkqdiqdaigD+QlHqmHHMm32NNo7mnuIG+fOgIbSbzzqT1MKN+KPVgem8OUkKOnFP4u6piq9D99xrVafKSztIg==",
       "type": "package",
-      "path": "xamarin.forms/4.5.0.495",
+      "path": "xamarin.forms/4.6.0.800",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1704,6 +1757,33 @@
         "build/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
         "build/netstandard2.0/Xamarin.Forms.Core.dll",
         "build/netstandard2.0/Xamarin.Forms.Xaml.dll",
+        "buildTransitive/MonoAndroid10/proguard.cfg",
+        "buildTransitive/XCODE10/Xamarin.Forms.Platform.iOS.dll",
+        "buildTransitive/XCODE10/Xamarin.Forms.Platform.iOS.pdb",
+        "buildTransitive/XCODE10/Xamarin.Forms.Platform.macOS.dll",
+        "buildTransitive/XCODE11/Xamarin.Forms.Platform.iOS.dll",
+        "buildTransitive/XCODE11/Xamarin.Forms.Platform.iOS.pdb",
+        "buildTransitive/XCODE11/Xamarin.Forms.Platform.macOS.dll",
+        "buildTransitive/Xamarin.Forms.DefaultItems.props",
+        "buildTransitive/Xamarin.Forms.DefaultItems.targets",
+        "buildTransitive/Xamarin.Forms.props",
+        "buildTransitive/Xamarin.Forms.targets",
+        "buildTransitive/net46/Mono.Cecil.Mdb.dll",
+        "buildTransitive/net46/Mono.Cecil.Pdb.dll",
+        "buildTransitive/net46/Mono.Cecil.Rocks.dll",
+        "buildTransitive/net46/Mono.Cecil.dll",
+        "buildTransitive/net46/System.ValueTuple.dll",
+        "buildTransitive/net46/Xamarin.Forms.Build.Tasks.dll",
+        "buildTransitive/net46/Xamarin.Forms.Core.dll",
+        "buildTransitive/net46/Xamarin.Forms.Xaml.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Mdb.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Pdb.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.Rocks.dll",
+        "buildTransitive/netstandard2.0/Mono.Cecil.dll",
+        "buildTransitive/netstandard2.0/System.CodeDom.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Build.Tasks.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Core.dll",
+        "buildTransitive/netstandard2.0/Xamarin.Forms.Xaml.dll",
         "lib/MonoAndroid10.0/Design/Xamarin.Forms.Core.Design.dll",
         "lib/MonoAndroid10.0/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/MonoAndroid10.0/FormsViewGroup.dll",
@@ -1909,8 +1989,8 @@
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Resources.xaml",
-        "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/StepperControl.xaml",
         "lib/uap10.0.14393/Xamarin.Forms.Platform.UAP/TabbedPageStyle.xaml",
@@ -1941,6 +2021,7 @@
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Microsoft.UI.Xaml/Themes/generic.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PageControlStyle.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PickerStyle.xaml",
+        "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/PromptDialog.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Resources.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/Shell/ShellStyles.xaml",
         "lib/uap10.0.16299/Xamarin.Forms.Platform.UAP/SliderStyle.xaml",
@@ -1951,11 +2032,86 @@
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.dll",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.pdb",
         "lib/uap10.0.16299/Xamarin.Forms.Xaml.xml",
-        "xamarin.forms.4.5.0.495.nupkg.sha512",
+        "xamarin.forms.4.6.0.800.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
     },
-    "GuessNumber/1.0.0": {
+    "Xamarin.GooglePlayServices.Ads.Base/71.1720.1": {
+      "sha512": "o6vS0OKqY0MpM61D5yI3TgFFqe96wTpkQTyq6EeVQV+tE4x3nOH6iUE7q5Yl73GgkisjVqn71Kvsl3FKiy4GBA==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.ads.base/71.1720.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Ads.Base.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Base.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Base.pdb",
+        "xamarin.googleplayservices.ads.base.71.1720.1.nupkg.sha512",
+        "xamarin.googleplayservices.ads.base.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Ads.Lite/71.1720.2": {
+      "sha512": "DdgJ1+uidjH0HzePoUrWdGsxj6bA5eomTbvR0xOzzLEs0c0U8NmY2MBGgC8Pyeq+Nu6JbulHnlWv5o8gH/e0fQ==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.ads.lite/71.1720.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Ads.Lite.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Lite.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Ads.Lite.pdb",
+        "proguard/MonoAndroid90/proguard.txt",
+        "xamarin.googleplayservices.ads.lite.71.1720.2.nupkg.sha512",
+        "xamarin.googleplayservices.ads.lite.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Basement/71.1620.2": {
+      "sha512": "5FJ1lpgT0yBWZJRuyZy/sp+KxBquDng/dWZHsrz6Ger5FzwWbnT6x9OQbIfXzsMXlbkm/WoCwO4KvumBjrKs8Q==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.basement/71.1620.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Basement.targets",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Tasks.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Basement.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Basement.pdb",
+        "proguard/MonoAndroid90/proguard.txt",
+        "xamarin.googleplayservices.basement.71.1620.2.nupkg.sha512",
+        "xamarin.googleplayservices.basement.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Measurement.Base/71.1630.1": {
+      "sha512": "L8ko3S98ZJ19mQsS+yCjCLrHT+1mDclDGvSGJX0wQrEDh+89EbZllzXYTGPitR9QurezydEPWqem074ZNflheA==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.measurement.base/71.1630.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Measurement.Base.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Base.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Base.pdb",
+        "proguard/MonoAndroid90/proguard.txt",
+        "xamarin.googleplayservices.measurement.base.71.1630.1.nupkg.sha512",
+        "xamarin.googleplayservices.measurement.base.nuspec"
+      ]
+    },
+    "Xamarin.GooglePlayServices.Measurement.Sdk.Api/71.1630.1": {
+      "sha512": "QRshiqBEF/Asu+3iF40EnF1Xq2FinJJ8uqX6Oji0t4dWoiPXNvWLHOp8isW/tgtlo2dYParCwlWdfdBvj661aA==",
+      "type": "package",
+      "path": "xamarin.googleplayservices.measurement.sdk.api/71.1630.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/MonoAndroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.targets",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.dll",
+        "lib/monoandroid90/Xamarin.GooglePlayServices.Measurement.Sdk.Api.pdb",
+        "proguard/MonoAndroid90/proguard.txt",
+        "xamarin.googleplayservices.measurement.sdk.api.71.1630.1.nupkg.sha512",
+        "xamarin.googleplayservices.measurement.sdk.api.nuspec"
+      ]
+    },
+    "GuessNumber/1.0.2": {
       "type": "project",
       "path": "../GuessNumber/GuessNumber.csproj",
       "msbuildProject": "../GuessNumber/GuessNumber.csproj"
@@ -1963,27 +2119,28 @@
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v9.0": [
-      "GuessNumber >= 1.0.0",
-      "Xamarin.Essentials >= 1.3.1",
-      "Xamarin.Forms >= 4.5.0.495"
+      "GuessNumber >= 1.0.2",
+      "Xamarin.Essentials >= 1.5.3.2",
+      "Xamarin.Forms >= 4.6.0.800",
+      "Xamarin.GooglePlayServices.Ads.Lite >= 71.1720.2"
     ]
   },
   "packageFolders": {
     "C:\\Users\\MC\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "D:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\GuessNumber.Android.csproj",
+      "projectUniqueName": "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\GuessNumber.Android.csproj",
       "projectName": "GuessNumber.Android",
-      "projectPath": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\GuessNumber.Android.csproj",
+      "projectPath": "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\GuessNumber.Android.csproj",
       "packagesPath": "C:\\Users\\MC\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\obj\\",
+      "outputPath": "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "D:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\MC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -2000,8 +2157,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj": {
-              "projectPath": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj"
+            "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj": {
+              "projectPath": "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj"
             }
           }
         }
@@ -2012,11 +2169,15 @@
         "dependencies": {
           "Xamarin.Essentials": {
             "target": "Package",
-            "version": "[1.3.1, )"
+            "version": "[1.5.3.2, )"
           },
           "Xamarin.Forms": {
             "target": "Package",
-            "version": "[4.5.0.495, )"
+            "version": "[4.6.0.800, )"
+          },
+          "Xamarin.GooglePlayServices.Ads.Lite": {
+            "target": "Package",
+            "version": "[71.1720.2, )"
           }
         }
       }

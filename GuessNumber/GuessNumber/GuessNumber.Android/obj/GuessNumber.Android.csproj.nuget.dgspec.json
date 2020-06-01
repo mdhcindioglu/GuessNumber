@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\GuessNumber.Android.csproj": {}
+    "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\GuessNumber.Android.csproj": {}
   },
   "projects": {
-    "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\GuessNumber.Android.csproj": {
+    "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\GuessNumber.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\GuessNumber.Android.csproj",
+        "projectUniqueName": "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\GuessNumber.Android.csproj",
         "projectName": "GuessNumber.Android",
-        "projectPath": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\GuessNumber.Android.csproj",
+        "projectPath": "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\GuessNumber.Android.csproj",
         "packagesPath": "C:\\Users\\MC\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\obj\\",
+        "outputPath": "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\MC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj": {
-                "projectPath": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj"
+              "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj": {
+                "projectPath": "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj"
               }
             }
           }
@@ -44,27 +44,31 @@
           "dependencies": {
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.3.1, )"
+              "version": "[1.5.3.2, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.5.0.495, )"
+              "version": "[4.6.0.800, )"
+            },
+            "Xamarin.GooglePlayServices.Ads.Lite": {
+              "target": "Package",
+              "version": "[71.1720.2, )"
             }
           }
         }
       }
     },
-    "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj": {
-      "version": "1.0.0",
+    "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj": {
+      "version": "1.0.2",
       "restore": {
-        "projectUniqueName": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj",
+        "projectUniqueName": "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj",
         "projectName": "GuessNumber",
-        "projectPath": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj",
+        "projectPath": "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber.csproj",
         "packagesPath": "C:\\Users\\MC\\.nuget\\packages\\",
-        "outputPath": "D:\\Users\\OJ\\source\\repos\\mdhcindioglu\\Xamarin\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\obj\\",
+        "outputPath": "D:\\Users\\MC\\Source\\Repos\\mdhcindioglu\\GuessNumber\\GuessNumber\\GuessNumber\\GuessNumber\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "D:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
           "C:\\Users\\MC\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -100,11 +104,11 @@
             },
             "Xamarin.Essentials": {
               "target": "Package",
-              "version": "[1.3.1, )"
+              "version": "[1.5.3.2, )"
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.5.0.495, )"
+              "version": "[4.6.0.800, )"
             }
           },
           "imports": [
